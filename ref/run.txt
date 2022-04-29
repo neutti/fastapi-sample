@@ -1,0 +1,7 @@
+pip3 install FastAPI
+pip3 install uvicorn==0.16.0
+pip3 install Jinja2
+
+nohup uvicorn main:app --reload --host=0.0.0.0 --port=10930 &
+
+lsof -i TCP:10930
